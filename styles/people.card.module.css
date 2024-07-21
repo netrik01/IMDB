@@ -1,0 +1,81 @@
+.container{
+    width: 100%;
+    padding: 100px 0 20px 0;
+}
+.row{
+    display: flex;
+    max-width: 1400px;
+    width: 90%;
+    min-height: 80vh;
+    margin: auto;
+    background-color: #eaebeb;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.img{
+    flex: 0 0 30%;
+    width: 30%;
+    background-color: #3B2C18;
+}
+.image{
+    width: 100%;
+    height: 100%;
+}
+.row_right{
+    flex: 0 0 70%;
+    width: 70%;
+    padding: 0 40px 0 40px;
+}
+.row_right .title{
+    font-size: 4rem;
+    font-family: Voyage;
+    font-weight: 500;
+    letter-spacing: .1rem;
+}
+.row_right .dob{
+    margin-top: 1rem;
+    font-size: 1.4rem;
+    font-family: Gilroy;
+    font-weight: 400;
+    opacity: .8;
+    letter-spacing: .1rem;
+}
+.row_right .known{
+    margin-top: 1rem;
+    font-size: 2rem;
+    font-family: Gilroy;
+    font-weight: 700;
+    letter-spacing: .1rem;
+    opacity: .6;
+}
+.row_right .bio{
+    margin-top: 2rem;
+    font-size: 2.5rem;
+    font-family: Gilroy;
+    font-weight: 500;
+    letter-spacing: .1rem;
+}
+.row_right .biography{
+    margin-top: 1.3rem;
+    font-size: 1.5rem;
+    font-family: Gilroy;
+    font-weight: 400;
+    line-height: 2.1rem;
+    text-align: justify;
+    opacity: .5;
+    letter-spacing: .1rem;
+}
+
+/* -------------Responsive------------- */
+@media screen and (max-width:999px){
+    .row{
+        display: inline;
+    }
+    .img{
+        margin: auto;
+        width: 80%;
+    }
+    .row_right{
+        width: 100%;
+    }
+}

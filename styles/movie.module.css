@@ -1,0 +1,99 @@
+.container{
+    width: 100%;
+    min-height: 100vh;
+    /* margin-top: 70px; */
+    padding: 70px 0 20px 0;
+}
+.main_title{
+    font-size: 2rem;
+    font-family: Gilroy;
+    font-weight: 500;
+    margin-left: 70px;
+    margin-top: 1rem;
+    color: #000;
+}
+.row{
+    margin: auto;
+    max-width: 1400px;
+    width: 90%;
+    height: 100%;
+    padding: 30px 0 0 0;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1.8rem;
+}
+.row .card{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 50vh;
+    border-radius: 6px;
+    border-bottom: .1px solid #090900;
+    box-shadow: 0 0 2px #000;
+    text-decoration: none;
+    color: #000;
+}
+
+.row .card .img{
+    width: 100%;
+    height: 75%;
+}
+
+.row .card .img .image{
+    width: 100%;
+    height: 100%;
+    /* object-fit: cover; */
+}
+.row .row_title{
+    margin-top: 30px;
+    margin-left: 20px;
+    font-size: 1.2rem;
+    font-family: Gilroy;
+    font-weight: 500;
+}
+.row .row_date{
+    margin-left: 20px;
+    font-size: 1rem;
+    font-family: Gilroy;
+    font-weight: 400;
+    opacity: .8;
+}
+
+.vote{
+    display: grid;
+    place-items: center;
+    margin-top: 1rem;
+    width: 4rem;
+    height: 4rem;
+    background-color: #032541;
+    border-radius: 50%;
+    position: absolute;
+    left: 5%;
+    bottom: 20%;
+}
+.vote_count{
+    font-size: 1rem;
+    font-family: Gilroy;
+    font-weight: 500;
+    letter-spacing: .1rem;
+    color: #fff;
+}
+
+
+/* -------------Responsive------------- */
+@media screen and (max-width:999px){
+    .row{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+@media screen and (max-width:759px){
+    .row{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media screen and (max-width:580px){
+    .row{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
